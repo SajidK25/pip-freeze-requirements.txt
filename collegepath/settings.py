@@ -26,7 +26,7 @@ SECRET_KEY = '3#ty2jqp3cc#2n9x7nl5azmg+ds6jp8!mfn!7hm50p=j*!k6=*'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CSRF_COOKIE_DOMAIN = '.railway.app'
 
 # Application definition
 
