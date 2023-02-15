@@ -26,7 +26,9 @@ SECRET_KEY = '3#ty2jqp3cc#2n9x7nl5azmg+ds6jp8!mfn!7hm50p=j*!k6=*'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*','web-production-6a41.up.railway.app']
+CSRF_COOKIE_NAME = "csrftoken"
 CSRF_COOKIE_DOMAIN = '.railway.app'
+CSRF_FAILURE_VIEW = "django.views.csrf.csrf_failure"
 
 # Application definition
 
