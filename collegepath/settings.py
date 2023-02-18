@@ -29,6 +29,8 @@ ALLOWED_HOSTS = ['*','web-production-6a41.up.railway.app']
 CSRF_COOKIE_NAME = "csrftoken"
 CSRF_COOKIE_DOMAIN = '.railway.app'
 CSRF_FAILURE_VIEW = "django.views.csrf.csrf_failure"
+if not DEBUG:
+    CSRF_TRUSTED_ORIGINS = ['https://web-production-6a41.up.railway.app']
 
 # Application definition
 
